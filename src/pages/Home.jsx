@@ -102,7 +102,7 @@ function Home() {
             <span className="text-sm text-gray-200">3rd Year Student</span>
           </motion.div>
 
-          <h1 className="text-6xl md:text-7xl font-black mb-4">
+          <h1 className="text-5xl md:text-6xl font-black mb-4">
             <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-transparent bg-clip-text animate-gradient">
               Assalamu aleykum
             </span>
@@ -181,7 +181,7 @@ function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-5xl font-black text-white mb-4">
+            <h2 className="text-4xl font-black text-white mb-4">
               Asosiy Ko'nikmalarim
             </h2>
             <p className="text-gray-400 text-lg">Mening professional ko'nikmalarim va qobiliyatlarim</p>
