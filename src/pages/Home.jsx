@@ -6,7 +6,7 @@ import { MdSchool } from "react-icons/md";
 import { HiSparkles } from "react-icons/hi";
 
 function Home() {
-  // Animation variants
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -77,7 +77,7 @@ function Home() {
 
   return (
     <div className="relative min-h-screen overflow-hidden" id="home">
-      {/* Animated Background */}
+
       <div className="fixed inset-0 -z-10">
         <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
         <div className="absolute top-0 -right-4 w-72 h-72 bg-yellow-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
@@ -85,14 +85,13 @@ function Home() {
       </div>
 
       <div className="container mx-auto px-4 py-20">
-        {/* HERO SECTION */}
+
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center relative"
         >
-          {/* Floating Badge */}
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
@@ -138,7 +137,6 @@ function Home() {
           </motion.div>
         </motion.div>
 
-        {/* ABOUT ME - Bento Box Style */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -161,7 +159,7 @@ function Home() {
               <p className="text-lg leading-relaxed text-gray-300">
                 Men hozirda ADUda tahsil olib,{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 font-semibold">
-                  Matematika, Fizika va Informatika
+                 Amaliy Matematika
                 </span>{" "}
                 yo'nalishida o'qimoqdaman. Aniq fanlarga qiziqishim tufayli mantiqiy fikrlash, tahlil qilish va muammolarni samarali hal qilish ko'nikmalarini rivojlantirib kelmoqdaman.
               </p>
