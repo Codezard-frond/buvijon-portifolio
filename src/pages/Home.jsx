@@ -324,7 +324,6 @@ function Home() {
             ))}
           </motion.div>
         </div>
-
         {/* Contact Section */}
         <div className="mt-28" id="contact">
           <motion.div
@@ -335,11 +334,12 @@ function Home() {
           >
             <h2 className="text-4xl font-black text-white mb-4">Bog'lanish</h2>
             <p className="text-gray-400 text-lg">
-              Men bilan bog'lanish uchun quyidagi formadan foydalaning
+              Men bilan bog'lanish uchun quyidagi formadan foydalaning yoki
+              telegram bot orqali yozing
             </p>
           </motion.div>
 
-          <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
             {/* Contact Info */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -348,7 +348,7 @@ function Home() {
               className="relative group"
             >
               <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
-              <div className="relative p-8 bg-gray-900/90 backdrop-blur-xl border border-white/10 rounded-3xl">
+              <div className="relative p-8 bg-gray-900/90 backdrop-blur-xl border border-white/10 rounded-3xl h-full">
                 <h3 className="text-2xl font-bold text-white mb-8">
                   Aloqa ma'lumotlari
                 </h3>
@@ -430,18 +430,72 @@ function Home() {
               </div>
             </motion.div>
 
+            {/* Telegram Bot Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.02 }}
+              className="relative group"
+            >
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-green-500 to-teal-500 rounded-3xl blur opacity-40 group-hover:opacity-60 transition duration-1000"></div>
+              <div className="relative p-8 bg-gray-900/90 backdrop-blur-xl border border-white/10 rounded-3xl h-full flex flex-col items-center justify-center text-center">
+                <div className="p-5 bg-gradient-to-br from-green-500/20 to-teal-500/20 rounded-3xl mb-6">
+                  <FaTelegram className="text-5xl text-green-400" />
+                </div>
+
+                <h3 className="text-2xl font-bold text-white mb-3">
+                  Tezkor bog'lanish
+                </h3>
+
+                <p className="text-gray-300 mb-6">
+                  Telegram bot orqali bevosita menga xabar yuborishingiz mumkin.
+                  Tezkor javob olish imkoniyati!
+                </p>
+
+                <a
+                  href="https://t.me/xayrulloxon_portfolio_bot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-4 px-6 bg-gradient-to-r from-green-500 to-teal-600 text-white font-bold rounded-2xl hover:opacity-90 hover:shadow-lg hover:shadow-green-500/30 transition-all duration-300 flex items-center justify-center gap-3"
+                >
+                  <FaTelegram className="text-2xl" />
+                  <span>Botga o'tish</span>
+                  <HiSparkles className="text-yellow-300" />
+                </a>
+
+                <div className="mt-6 p-4 bg-gradient-to-r from-green-500/10 to-teal-500/10 border border-green-500/20 rounded-2xl">
+                  <p className="text-gray-300 text-sm">
+                    <span className="text-green-400 font-semibold">
+                      24/7 ishlaydi
+                    </span>{" "}
+                    - istalgan vaqt yozishingiz mumkin
+                  </p>
+                </div>
+
+                <div className="mt-8 flex items-center justify-center gap-2 text-gray-400">
+                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm">Bot faol</span>
+                </div>
+              </div>
+            </motion.div>
+
             {/* Contact Form */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="relative group"
+              className="relative group lg:col-span-1"
             >
               <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-500 to-orange-500 rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
               <form
                 onSubmit={handleSubmit}
                 className="relative p-8 bg-gray-900/90 backdrop-blur-xl border border-white/10 rounded-3xl"
               >
+                <h3 className="text-2xl font-bold text-white mb-8">
+                  Xabar yuborish
+                </h3>
+
                 <div className="mb-6">
                   <label className="block text-gray-300 mb-3 font-medium">
                     Ismingiz
