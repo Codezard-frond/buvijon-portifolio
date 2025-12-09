@@ -361,7 +361,7 @@ function Home() {
                     <div>
                       <p className="text-gray-400 text-sm">Email</p>
                       <p className="font-medium text-white">
-                        xayrullohon@example.com
+                        xayrullohon@gmail.com
                       </p>
                     </div>
                   </div>
@@ -373,7 +373,7 @@ function Home() {
                     <div>
                       <p className="text-gray-400 text-sm">Telefon</p>
                       <p className="font-medium text-white">
-                        +998 90 123 45 67
+                        +998 971012507
                       </p>
                     </div>
                   </div>
@@ -384,7 +384,7 @@ function Home() {
                     </div>
                     <div>
                       <p className="text-gray-400 text-sm">Telegram</p>
-                      <p className="font-medium text-white">@xayrullohon_dev</p>
+                      <p className="font-medium text-white">@xayrullohon_05</p>
                     </div>
                   </div>
 
