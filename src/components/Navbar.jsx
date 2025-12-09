@@ -46,6 +46,13 @@ function Navbar() {
           >
             Skills
           </button>
+        </li><li>
+          <button
+            className="btn btn-neutral bg-black/20 border-none"
+            onClick={() => scrollToSection("contact")}
+          >
+            contact
+          </button>
         </li>
       </ul>
     </nav>
